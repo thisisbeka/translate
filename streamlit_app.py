@@ -14,7 +14,6 @@ word = st.text_input("Введите слово для перевода:")
 client = OpenAI(
   api_key="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"
 )
-
 if st.button("Перевести") and word:
         # Определение целевого языка на основе направления
         if direction == "Русский → Кетский":
