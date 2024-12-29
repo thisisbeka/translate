@@ -13,7 +13,7 @@ direction = st.selectbox(
 word = st.text_input("Введите слово для перевода:")
 
 client = OpenAI(
-  api_key="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"
+  api_key="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"
 )
 
 if st.button("Перевести") and word:
