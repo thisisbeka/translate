@@ -11,7 +11,6 @@ direction = st.selectbox(
 
 # Ввод слова для перевода
 word = st.text_input("Введите слово для перевода:")
-
 client = OpenAI(
   api_key="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"
 )
