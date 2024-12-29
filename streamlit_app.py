@@ -12,7 +12,7 @@ direction = st.selectbox(
 # Ввод слова для перевода
 word = st.text_input("Введите слово для перевода:")
 client = OpenAI(
-  api_key="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"
+  api_key="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"
 )
 
 if st.button("Перевести") and word:
@@ -28,7 +28,7 @@ if st.button("Перевести") and word:
             model="gpt-4o-mini",
             store=True,
             messages=[
-                {"role": "user", "content": "Ты переводчик между русским и кетским языками. Тебе нужно писать только варианты переводов и ничего больше."},
+                {"role": "user", "content": "Ты переводчик между русским и кетским языками. Тебе нужно писать только варианты переводов и ничего больше. Вот примеры {ru: август, ket: августәип}, {ru: август, ket: даанәип}, {ru: август, ket: ульбънна әип}, {ru: автобус, ket: автобус}, {ru: автомобиль, ket: автомобиль}, {ru: адрес, ket: адрес}, {ru: азбука, ket: азбука}, {ru: аккуратный, ket: тъәиен}, {ru: аккуратная, ket: тъәиен}, {ru: аккуратное, ket: тъәиен}, {ru: рыба, ket: ись}"},
                 {"role": "user", "content": prompt}
             ]
         )
